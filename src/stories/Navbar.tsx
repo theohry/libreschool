@@ -12,17 +12,17 @@ import MenuIcon from "@mui/icons-material/Menu";
 export interface NavbarProps {
 	variant?: "transparent" | "solid";
 	fullWidth?: boolean;
-	sticky?: boolean;
+	fixedTop?: boolean;
 }
 
 export const Navbar = ({
 	variant = "solid",
 	fullWidth = true,
-	sticky = true,
+	fixedTop = true,
 }: NavbarProps) => {
 	return (
 		<Box sx={{ flexGrow: 1 }}>
-			<AppBar>
+			<AppBar position={fixedTop?'fixed':'absolute'}>
 				<Toolbar>
 					<IconButton
 						size="large"
@@ -43,6 +43,7 @@ export const Navbar = ({
 					<Button color="inherit">Login</Button>
 				</Toolbar>
 			</AppBar>
+            <Box bgcolor={"ff00ff"} height={"10000px"}></Box>
 		</Box>
 	);
 };
