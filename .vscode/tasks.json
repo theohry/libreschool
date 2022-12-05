@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "React app launch",
+            "type": "shell",
+            "command": "npm start",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "group": "Server"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Storybook launch",
+            "type": "shell",
+            "command": "npm run storybook",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "group": "Server"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Fresh shell",
+            "type": "shell",
+            "command": "echo Welcome",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "group": "Server"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
