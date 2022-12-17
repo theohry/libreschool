@@ -30,9 +30,9 @@
             }
         },
         {
-            "label": "Fresh shell",
+            "label": "Test suite launch",
             "type": "shell",
-            "command": "echo Welcome",
+            "command": "npm test -- --watchAll",
             "presentation": {
                 "reveal": "always",
                 "panel": "new",
